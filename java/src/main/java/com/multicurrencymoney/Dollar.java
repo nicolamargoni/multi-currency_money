@@ -1,11 +1,13 @@
 package main.java.com.multicurrencymoney;
 
 public class Dollar {
-    public int amount = 5 * 2 ;
+    public int amount;
 
     public Dollar(int amount) {
+        this.amount = amount;
     }
 
-    public void times(int i) {
+    public void times(int multiplier) {
+        this.amount *= multiplier;
     }
 }
