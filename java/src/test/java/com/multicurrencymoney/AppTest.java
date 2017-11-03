@@ -1,6 +1,7 @@
 package test.java.com.multicurrencymoney;
 
 import main.java.com.multicurrencymoney.Dollar;
+import main.java.com.multicurrencymoney.Franc;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
