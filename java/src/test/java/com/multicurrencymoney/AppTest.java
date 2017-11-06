@@ -1,5 +1,7 @@
 package test.java.com.multicurrencymoney;
 
+import main.java.com.multicurrencymoney.Bank;
+import main.java.com.multicurrencymoney.Expression;
 import main.java.com.multicurrencymoney.Money;
 import org.junit.Test;
 
