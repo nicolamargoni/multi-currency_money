@@ -1,7 +1,5 @@
 package test.java.com.multicurrencymoney;
 
-import main.java.com.multicurrencymoney.Dollar;
-import main.java.com.multicurrencymoney.Franc;
 import main.java.com.multicurrencymoney.Money;
 import org.junit.Test;
 
@@ -12,14 +10,14 @@ public class AppTest {
 
     @Test
     public void testMultiplication() {
-        Dollar five = Money.dollar(5);
+        Money five = Money.dollar(5);
         assertEquals(Money.dollar(10), five.times(2));
         assertEquals(Money.dollar(15), five.times(3));
     }
 
     @Test
     public void testFrancMultiplication() {
-        Franc five = Money.franc(5);
+        Money five = Money.franc(5);
         assertEquals(Money.franc(10), five.times(2));
         assertEquals(Money.franc(15), five.times(3));
     }
@@ -42,7 +40,7 @@ public class AppTest {
 
     @Test
     public void testDifferentClassEquality() {
-        assertTrue(new Money(10, "CHF").equals(new Franc(10, "CHF")));
+        assertTrue(new Money(10, "CHF").equals(new Money(10, "CHF")));
     }
 
 }
