@@ -3,6 +3,7 @@ package test.java.com.multicurrencymoney;
 import main.java.com.multicurrencymoney.Bank;
 import main.java.com.multicurrencymoney.Expression;
 import main.java.com.multicurrencymoney.Money;
+import main.java.com.multicurrencymoney.Sum;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
